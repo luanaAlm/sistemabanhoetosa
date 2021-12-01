@@ -1,0 +1,14 @@
+{% extends 'base_login.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+  <form class="user"  method="POST">
+
+    <div class="rounded-pill">
+      {% csrf_token %}
+      {{ form|crispy }}
+    </div>
+    <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+  </form>
+{% endblock %}

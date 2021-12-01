@@ -1,0 +1,54 @@
+{% load bootstrap %}
+<head>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+  </style>
+
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    form {
+      color: white;
+      /*text-align: center;*/
+      background-color: #6600cc;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      margin-left: 80px;
+      padding: 70px;
+      border: 1px solid #4caf50;
+    }
+
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+  <a href="{% url 'account_logout' %}">Sair</a>
+<h1>Cadastro do Cliente</h1>
+<form action="{% url 'cadastro_novo' %}" method="POST">
+  <!--Seguranca-->
+  {% csrf_token %} {{ form|bootstrap }}
+  <button type="submit" class="btn btn-2">Enviar Mensagem</button>
+  <hr />
+</form>

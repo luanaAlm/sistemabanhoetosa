@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap %}
+{% block main %}
+
+<header>
+	<h1 class="red">HYDROFRESH CUIDANDO DO SEU PET.</h1>
+	<!-- <ps></p> -->
+	<a href="sobre"class="botao">VER MAIS</a>
+
+</header>
+<div class="container-geral">
+	<section id="sobre">
+		<h2>SOBRE</h2>
+		<p>clinaca veterinaria</p>
+		<a href="contato"class="botao">ENTRE EM CONTATO</a>
+	</section>
+</div>
+<div>
+	<section id="serviços">
+		<h2>SERVIÇOS</h2>
+</div>
+<div>
+    <img src="{% static 'img/pet5.png' %}" alt="Hospedagem">
+	<h3>Hospedagem: programe suas ferias e divirta-se.</h3>
+	<p>Para quem está procurando por um hotel para cachorro que conte com uma infra-estrutura de qualidade, Possui um ambiente com árvores, gramados e até mesmo piscinas e playground, oferecendo assim uma hospedagem com conforto e diversão para seu cachorrinho. Confira mais entrando em contato.</p>
+</div>
+<div>
+	<img src="{% static 'img/doente.png' %}"alt="CLINICA 24HORAS">
+	<h3>CLINICA 24HORAS</h3>
+	<p> Não deixe seus seu animal na mão, venha ao EDSHOP ATENDIMENTO 24HORAS.</p>
+</div>
+<div>
+	<img src="{% static 'img/banho.png' %}"alt="Banho & Tosa">
+	<h3>Banho & Tosa</h3>
+	<p>Os hábitos de limpeza, como banho e tosa, garantem bem-estar a cães e gatos, reduzem a chance de problemas secundários e aproximam os esteticistas dos proprietários, visando melhor atendimento e interação. Um animal que sai de sua casa para tomar um banho não deve nunca sofrer por isso. O banho deve ser prazeroso e o proprietário deve procurar fazer do pet shop um local agradável ao animal, que é o seu cliente.</p>
+</div>
+<div>
+	<img src="{% static 'img/produtos.jpg' %}"alt="produtos">
+	<h3>PRODUTOS EM NOSSA LOJA</h3>
+    <p>Encontre aqui os produtos mais adequados para seu Pet. Tudo em até 3x Sem Juros! Compre no App Petlove. Compra Segura. Frete Grátis* Entregas em Todo o Brasil. Desde 1999. Entrega Garantida. Tipos: Ração, Tapetes, Areias, Antipulgas, Vermífugos, Brinquedos, Coleiras</p>
+</div>
+<div>
+<!-- <nav> -->
+</section>
+	<section id="portfolio">
+		<h2>PORTIFOLIO</h2>
+		<div style="align-items: center;">
+			<img src="{% static 'img/DOG 03.jpg' %}"alt="DOG 03">
+			<img src="{% static 'img/GATO 04 SINISTRO.jpg' %}"alt="GATO 04 SINISTRO">
+        </div>
+	</section>
+	<select id="contato">
+		<h3>CONTATO</h3>
+		<p> entre em contato conosco.</p>
+		<div>
+			<img src="{% static 'img/fone.png' %}"alt="fone">
+			<p><a href="tel:02186994053542"(xx) 555 - 5555></a></p>
+		</div>
+		<div>
+			<img src="{% static 'img/ed-fundo-menor.png' %}" alt="email">
+			<p><a href="esdhop.vet@hotmail.com">edshop.vet@hotmail.com</a></p>
+		</div>
+</section>
+<!-- <nav> -->
+<div>
+	<section id="clinica">
+		<ul>
+		<h4>CLINICA</h4>
+</div>
+	<div>
+		<img src="{% static 'img/hospital-veterinario.jpg' %}" alt="CLINICA">
+		<h4>Hospedagem: programe suas ferias e divirta-se.</h4>
+		<p>Para quem está procurando por um hotel para cachorro que conte com uma infra-estrutura de qualidade, Possui um ambiente com árvores, gramados e até mesmo piscinas e playground, oferecendo assim uma hospedagem com conforto e diversão para seu cachorrinho. Confira mais entrando em contato.</p>
+	</div>
+<!-- </nav> -->
+	</select>
+</div>
+
+{% endblock %}
